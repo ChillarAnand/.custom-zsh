@@ -1,3 +1,7 @@
+# links
+# ln ~/.custom_zsh/zshrc ~/.zshrc 
+# ln ~/.custom_zsh/themes/ys2.zsh-theme ~/.oh-my-zsh/themes/ys2.zsh-theme
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -6,7 +10,7 @@ export ZSH=~/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # best-themes-list - half-life, ys, steef, sorin, jonathan(line)
-ZSH_THEME="ys"
+ZSH_THEME="ys2"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -130,14 +134,14 @@ alias sz='source ~/.zshrc'
 alias se='source .env'
 
 
-alias p='ps -ef'
+alias ps='ps -ef'
 alias psg='ps -ef'
 
 alias s1='s2cctl start'
 alias s0='s2cctl stop'
 
 # python 
-alias py='ipython'
+alias p='python'
 alias ipy='ipython'
 
 alias pt="py.test "
