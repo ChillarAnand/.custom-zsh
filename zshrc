@@ -28,7 +28,7 @@ ZSH_THEME="ys2"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -94,10 +94,7 @@ export TERM=xterm-256color
 
 
 
-
 # alias 
-# commands
-
 alias sudo='sudo '
 
 alias re='sudo shutdown -r 0'
@@ -111,12 +108,15 @@ alias t=tree
 alias l=ls
 
 alias cl=clear
-alias gt='gnome-terminal'
 
 
 alias h='history'
 alias hg='history | grep'
 alias hgi='history | grep -i'
+
+alias ps='ps -ef'
+alias pg='ps -ef | grep'
+alias pgi='ps -ef | grep -i'
 
 
 # ubuntu
@@ -124,29 +124,24 @@ alias ag='sudo apt-get'
 
 alias ai='sudo apt-get install'
 alias au='sudo apt-get update'
-alias aug='sudo apt-get upgrade'
-
-alias aar='sudo apt-get autoremove'
-alias aac='sudo apt-get autoclean'
 
 
 alias sz='source ~/.zshrc'
 alias se='source .env'
 
 
-alias ps='ps -ef'
-alias psg='ps -ef'
-
 alias s1='s2cctl start'
 alias s0='s2cctl stop'
 
+
 # python 
 alias p='python'
+alias py='python'
 alias ipy='ipython'
 
 alias pt="py.test "
 
-alias f="fab"
+#alias f="fab"
 
 alias wo='workon'
 alias wp='workon pearl'
@@ -154,7 +149,12 @@ alias we='workon exp'
 
 alias pf='pip freeze | sort'
 alias pi='pip install'
-alias pun='pip uninstall'
+alias pu='pip install --upgrade'
+alias prm='pip uninstall'
+alias pup='pip install --upgrade pip'
+
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # django
 alias dj="python manage.py"
@@ -186,6 +186,7 @@ alias go="git clone"
 
 # mysql
 alias ms="mysql"
+
 
 
 echo "---------------------- sourced zsh ------------------------"
