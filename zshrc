@@ -50,7 +50,8 @@ ZSH_CUSTOM=~/.custom-zsh/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+# plugins=(git z extract dirpersist autoenv web-search)
+plugins=(git z extract dirpersist autoenv)
 
 # User configuration
 
@@ -96,6 +97,9 @@ export TERM=xterm-256color
 
 # alias 
 alias sudo='sudo '
+alias df='df -h'
+alias du='du -hs'
+alias jobs='jobs -l'
 
 alias re='sudo shutdown -r 0'
 
@@ -115,7 +119,6 @@ alias hg='history | grep'
 alias hgi='history | grep -i'
 
 alias ps='ps -ef'
-alias pg='ps -ef | grep'
 alias pgi='ps -ef | grep -i'
 
 
@@ -159,8 +162,8 @@ alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # django
 alias dj="python manage.py"
 
-alias di="python manage.py inspectdb"
-alias dt="python manage.py test"
+#alias di="python manage.py inspectdb"
+#alias dt="python manage.py test"
 
 alias drs="python manage.py runserver"
 alias dr="python manage.py runserver_plus"
@@ -168,14 +171,14 @@ alias dr="python manage.py runserver_plus"
 alias dsh="python manage.py shell"
 alias ds="python manage.py shell_plus"
 
-alias dsm="python manage.py schemamigration"
-alias dsd="python manage.py syncdb"
+#alias dsm="python manage.py schemamigration"
+#alias dsd="python manage.py syncdb"
 
 alias dmm="python manage.py makemigrations"
 alias dm="python manage.py migrate"
 
-alias ddd="python manage.py dumpdata"
-alias dld="python manage.py loaddata"
+#alias ddd="python manage.py dumpdata"
+#alias dld="python manage.py loaddata"
 
 
 
