@@ -95,44 +95,44 @@ export TERM=xterm-256color
 
 
 
-# alias 
-alias sudo='sudo '
+# alias
+alias a=alias
+alias c=cat
+alias d='dirs -v | head -20'
+alias h='history'
+alias j=z
+alias k='kill -9'
+alias l=ls
+alias m=man
+alias t=tree
+
+
 alias df='df -h'
 alias du='du -hs'
-alias jobs='jobs -l'
+alias rf='rm -rf'
 
 alias re='sudo shutdown -r 0'
-
-
-alias c=cat
+alias ka='killall '
 alias le=less
-
-alias j=z
-alias t=tree
-alias l=ls
-
 alias cl=clear
 
 
-alias h='history'
+
+
 alias hg='history | grep'
 alias hgi='history | grep -i'
 
 alias ps='ps -ef'
 alias pgi='ps -ef | grep -i'
 
+alias sudo='sudo '
+alias jobs='jobs -l'
 
-# ubuntu
 alias ag='sudo apt-get'
-
 alias ai='sudo apt-get install'
 alias au='sudo apt-get update'
-
-
 alias sz='source ~/.zshrc'
 alias se='source .env'
-
-
 alias s1='s2cctl start'
 alias s0='s2cctl stop'
 
