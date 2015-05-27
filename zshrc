@@ -94,6 +94,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
 
 
+export PYTHONDONTWRITEBYTECODE=False
 
 # alias
 alias a=alias
@@ -105,6 +106,7 @@ alias k='kill -9'
 alias l=ls
 alias m=man
 alias t=tree
+alias s=sudo
 
 
 alias df='df -h'
@@ -185,6 +187,10 @@ alias dm="python manage.py migrate"
 # git
 alias gi="git init"
 alias go="git clone"
+
+alias lg1=log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+alias lg2=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+alias lg="git lg1"
 
 
 # mysql
