@@ -109,6 +109,10 @@ alias t=tree
 alias s=sudo
 
 
+
+alias sy='rsync -raz --progress'
+alias in='ping goo.gl'
+alias sp='_ du -hs *'
 alias df='df -h'
 alias du='du -hs'
 alias rf='rm -rf'
@@ -117,8 +121,6 @@ alias re='sudo shutdown -r 0'
 alias ka='killall '
 alias le=less
 alias cl=clear
-
-
 
 
 alias hg='history | grep'
