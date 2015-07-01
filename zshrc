@@ -96,19 +96,19 @@ export TERM=xterm-256color
 
 export PYTHONDONTWRITEBYTECODE=False
 
+
 # alias
 alias a=alias
+alias b='s !!'
 alias c=cat
 alias d='dirs -v | head -20'
 alias h='history'
 alias j=z
 alias k='kill -9'
-alias l=ls
+alias l=ll
 alias m=man
 alias t=tree
 alias s=sudo
-
-
 
 alias sy='rsync -raz --progress'
 alias in='ping goo.gl'
@@ -121,7 +121,7 @@ alias re='sudo shutdown -r 0'
 alias ka='killall '
 alias le=less
 alias cl=clear
-
+alias wi='whereis'
 
 alias hg='history | grep'
 alias hgi='history | grep -i'
