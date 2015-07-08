@@ -105,7 +105,8 @@ alias d='dirs -v | head -20'
 alias h='history'
 alias j=z
 alias k='kill -9'
-alias l=ll
+alias l='ls -1 --color'
+
 alias m=man
 alias t=tree
 alias s=sudo
