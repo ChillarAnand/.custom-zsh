@@ -67,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='emacs'
+    export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -100,8 +100,9 @@ export PYTHONDONTWRITEBYTECODE=False
 # alias
 alias a=alias
 alias b='s !!'
-alias c=cat
+alias c='cat'
 alias d='dirs -v | head -20'
+alias e='emacs'
 alias h='history'
 alias j=z
 alias k='kill -9'
@@ -149,7 +150,8 @@ alias ipy='ipython'
 
 alias pt="py.test "
 
-#alias f="fab"
+alias pom="git push origin master"
+alias pum="git push upstream master"
 
 alias wo='workon'
 alias wp='workon pearl'
@@ -157,9 +159,14 @@ alias we='workon exp'
 
 alias pf='pip freeze | sort'
 alias pi='pip install'
+alias pun='pip uninstall'
 alias pu='pip install --upgrade'
 alias prm='pip uninstall'
 alias pup='pip install --upgrade pip'
+
+alias df='pydf'
+alias du='ncdu'
+alias top='htop'
 
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
