@@ -51,7 +51,7 @@ ZSH_CUSTOM=~/.custom-zsh/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git z extract dirpersist autoenv web-search)
-plugins=(git z extract dirpersist autoenv)
+plugins=(git z extract dirpersist autoenv pip)
 
 # User configuration
 
@@ -93,7 +93,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # emacs prelude
 export TERM=xterm-256color
 
-
 export PYTHONDONTWRITEBYTECODE=False
 
 
@@ -107,14 +106,14 @@ alias h='history'
 alias j=z
 alias k='kill -9'
 alias l='ls -1 --color'
-
+alias n='nautilus .'
 alias m=man
-alias t=tree
+alias t='tree -Cfh'
 alias s=sudo
 
 alias sy='rsync -raz --progress'
 alias in='ping goo.gl'
-alias sp='_ du -hs *'
+alias sp='sudo du -hs *'
 alias df='df -h'
 alias du='du -hs'
 alias rf='rm -rf'
@@ -122,7 +121,6 @@ alias rf='rm -rf'
 alias re='sudo shutdown -r 0'
 alias ka='killall '
 alias le=less
-alias cl=clear
 alias wi='whereis'
 
 alias hg='history | grep'
@@ -135,6 +133,7 @@ alias sudo='sudo '
 alias jobs='jobs -l'
 
 alias ag='sudo apt-get'
+alias ai='sudo apt-get install'
 alias ai='sudo apt-get install'
 alias au='sudo apt-get update'
 alias sz='source ~/.zshrc'
@@ -150,26 +149,18 @@ alias ipy='ipython'
 
 alias pt="py.test "
 
-alias pom="git push origin master"
-alias pum="git push upstream master"
-
 alias wo='workon'
 alias wp='workon pearl'
 alias we='workon exp'
 
 alias pf='pip freeze | sort'
 alias pi='pip install'
-alias pun='pip uninstall'
-alias pu='pip install --upgrade'
-alias prm='pip uninstall'
+alias pr='pip install -r'
+alias pu='pip uninstall'
+alias piu='pip install --upgrade'
+alias pir='pip install -r requirements.txt'
 alias pup='pip install --upgrade pip'
 
-alias df='pydf'
-alias du='ncdu'
-alias top='htop'
-
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # django
 alias dj="python manage.py"
@@ -192,6 +183,12 @@ alias dm="python manage.py migrate"
 #alias ddd="python manage.py dumpdata"
 #alias dld="python manage.py loaddata"
 
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+
+alias pom="git push origin master"
+alias pum="git push upstream master"
 
 
 # git
