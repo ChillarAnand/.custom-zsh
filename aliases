@@ -32,6 +32,7 @@ alias lg1=log --graph --abbrev-commit --decorate --date=relative --format=format
 alias lg2=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 alias lg="git lg1"
 alias m=man
+alias me='free -h'
 alias ms="mysql"
 alias n='nautilus .'
 alias p='python'
@@ -42,7 +43,6 @@ alias pir='pip install -r requirements.txt'
 alias piu='pip install --upgrade'
 alias pom="git push origin master"
 alias pr='pip install -r'
-alias pgi='ps -ef | grep -i '
 alias pt="py.test "
 alias pu='pip uninstall'
 alias pup='pip install --upgrade pip'
