@@ -28,6 +28,8 @@ alias j=z
 alias jobs='jobs -l'
 alias k='kill -9'
 alias ka='killall '
+alias ke='killall emacs'
+alias kc='killall chrome'
 alias l='ls -1 --color'
 alias le=less
 alias lg1=log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
