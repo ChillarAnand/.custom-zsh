@@ -97,7 +97,10 @@ if [ -d /etc/profile.d ]; then
 fi
 
 # source virtualenv wrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
+
 
 
 # emacs prelude
