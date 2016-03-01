@@ -5,6 +5,7 @@ alias au='sudo apt-get update -qq'
 alias c='cat'
 alias ch='google-chrome'
 alias d='dirs -v | head -10'
+alias de='sudo salt master state.highstate saltenv=web'
 alias dj="python manage.py"
 alias dm="python manage.py migrate"
 alias dmm="python manage.py makemigrations"
