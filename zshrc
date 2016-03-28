@@ -1,5 +1,5 @@
 # links
-# ln ~/.custom_zsh/zshrc ~/.zshrc 
+# ln ~/.custom_zsh/zshrc ~/.zshrc
 # ln ~/.custom_zsh/themes/ys2.zsh-theme ~/.oh-my-zsh/themes/ys2.zsh-theme
 
 # Path to your oh-my-zsh installation.
@@ -107,6 +107,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
 
 export PYTHONDONTWRITEBYTECODE=False
+
+export THEANO_FLAGS='floatX=float32'
 
 source $ZSH_CUSTOM/aliases
 
