@@ -1,6 +1,10 @@
 alias a=alias
+
 alias jd='cd ~/Downloads/'
-alias b=byobu
+alias js='cd ~/sandbox'
+
+
+alias b='byobu'
 alias ag='sudo apt-get'
 alias ai='sudo apt-get install'
 alias au='sudo apt-get update -qq'
@@ -8,15 +12,36 @@ alias c='cat'
 alias cf='clementine -f'
 alias ch='google-chrome 2&>1 > /dev/null &'
 alias cr='clementine -r'
+
 alias d='dirs -v | head -10'
 alias de='sudo salt master state.highstate saltenv=web'
+
+alias pgi='ps -ef | grep -i'
+
+
+# python aliases
+alias py='python'
+
+alias pf='pip freeze | sort'
+alias pi='pip install'
+alias pir='pip install -r requirements.txt'
+alias piu='pip install --upgrade'
+alias piup='pip install --upgrade pip'
+alias pu='pip uninstall'
+
+alias psi='python setup.py install'
+
 alias dj="python manage.py"
+alias djc="python manage.py createsuperuser"
 alias dm="python manage.py migrate"
 alias dmm="python manage.py makemigrations"
 alias dr="python manage.py runserver"
 alias drp="python manage.py runserver_plus"
 alias ds="python manage.py shell"
 alias dsp="python manage.py shell_plus"
+alias dn='python manage.py shell_plus --notebook'
+
+
 alias du='du -hs'
 alias e='emacs 2&>1 >/dev/null &'
 alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
@@ -45,17 +70,9 @@ alias m=man
 alias me='free -h'
 alias ms="mysql"
 alias n='nautilus .'
-alias pf='pip freeze | sort'
-alias pgi='ps -ef | grep -i'
-alias pi='pip install'
-alias pir='pip install -r requirements.txt'
-alias piu='pip install --upgrade'
 alias pom="git push origin master"
 alias pr='pip install -r'
 alias pt="py.test "
-alias pu='pip uninstall'
-alias pup='pip install --upgrade pip'
-alias py='python'
 alias re='sudo shutdown -r 0'
 alias rf='rm -rf'
 alias s1='~/projects/ubuntu/os/space2ctrl.sh'

@@ -113,4 +113,14 @@ export THEANO_FLAGS='floatX=float32'
 source $ZSH_CUSTOM/aliases
 
 
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# autoenv
+source /usr/local/bin/activate.sh
+
+workon 3
+
 echo "---------------------- sourced zsh ------------------------"
