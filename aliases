@@ -1,5 +1,6 @@
 alias a=alias
 
+alias j=z
 alias jd='cd ~/Downloads/'
 alias js='cd ~/sandbox'
 
@@ -21,15 +22,23 @@ alias pgi='ps -ef | grep -i'
 
 # python aliases
 alias py='python'
+alias ipy='ipython'
 
 alias pf='pip freeze | sort'
 alias pi='pip install'
-alias pir='pip install -r requirements.txt'
+alias pir='pip install -r'
+alias pirr='pip install -r requirements.txt'
 alias piu='pip install --upgrade'
 alias piup='pip install --upgrade pip'
 alias pu='pip uninstall'
 
 alias psi='python setup.py install'
+
+alias pt="py.test "
+
+alias nb='ipython notebook'
+alias jn='jupyter notebook'
+alias 1n='cd /home/anand/projects/01/python; jupyter notebook python3.ipynb'
 
 alias dj="python manage.py"
 alias djc="python manage.py createsuperuser"
@@ -42,45 +51,61 @@ alias dsp="python manage.py shell_plus"
 alias dn='python manage.py shell_plus --notebook'
 
 
+
 alias du='du -hs'
 alias e='emacs 2&>1 >/dev/null &'
 alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # alias f='thefuck'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-alias gi="git init"
-alias go="git clone"
+
+
 alias h='history'
 alias hg='history | grep'
 alias hgi='history | grep -i'
 alias ht='htop'
+
 alias i='ping 8.8.8.8'
-alias ipy='ipython'
-alias j=z
+
+
 alias jobs='jobs -l'
+
 alias k='kill -9'
 alias ka='killall '
 alias kc='killall chrome'
 alias ke='killall emacs'
-alias l='ls -1 --color'
+
+alias l='clear && ls'
+
 alias le=less
 alias lg1=log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 alias lg2=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 alias lg="git lg1"
+alias gpom="git push origin master"
+alias gi="git init"
+alias go="git clone"
+
+
 alias m=man
+
 alias me='free -h'
+
 alias ms="mysql"
+
 alias n='nautilus .'
-alias pom="git push origin master"
-alias pr='pip install -r'
-alias pt="py.test "
+
+
 alias re='sudo shutdown -r 0'
 alias rf='rm -rf'
+
 alias s1='~/projects/ubuntu/os/space2ctrl.sh'
+
 alias s=sudo
-alias se='source .env'
 alias si='sudo -i'
 alias sp='sudo du -hs *'
 alias sudo='sudo '
+
+alias se='source .env'
+
 alias sy='rsync -raz --progress'
 alias sz='source ~/.zshrc'
 alias t='tree -Cfh'
@@ -89,5 +114,3 @@ alias wi='whereis'
 alias wo='workon'
 alias wp='workon pearl'
 alias yd='youtube-dl '
-alias nb='ipython notebook'
-alias jn='jupyter notebook'
