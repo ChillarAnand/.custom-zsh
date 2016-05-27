@@ -117,6 +117,8 @@ source $ZSH_CUSTOM/aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.cask/bin:$PATH"
+
 
 # autoenv
 source /usr/local/bin/activate.sh

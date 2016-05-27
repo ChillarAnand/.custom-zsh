@@ -30,7 +30,7 @@ alias pir='pip install -r'
 alias pirr='pip install -r requirements.txt'
 alias piu='pip install --upgrade'
 alias piup='pip install --upgrade pip'
-alias pu='pip uninstall'
+alias pu='pip uninstall --yes'
 
 alias psi='python setup.py install'
 
