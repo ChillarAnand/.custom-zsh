@@ -70,6 +70,7 @@ alias i='ping 8.8.8.8'
 alias jobs='jobs -l'
 
 alias k='kill -9'
+alias pk='pkill'
 alias ka='killall '
 alias kc='killall chrome'
 alias ke='killall emacs'
