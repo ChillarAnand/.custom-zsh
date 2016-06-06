@@ -7,7 +7,7 @@ alias js='cd ~/sandbox'
 
 alias b='byobu'
 alias ag='sudo apt-get'
-alias ai='sudo apt-get install'
+alias ai='sudo apt-get install --yes'
 alias au='sudo apt-get update -qq'
 alias c='cat'
 alias cf='clementine -f'
