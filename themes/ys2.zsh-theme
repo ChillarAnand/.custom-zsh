@@ -31,20 +31,20 @@ ZSH_THEME_GIT_PROMPT_CLEAN="$YS_VCS_PROMPT_CLEAN"
 # HG info
 local hg_info='$(ys_hg_prompt_info)'
 ys_hg_prompt_info() {
-	# make sure this is a hg dir
-	if [ -d '.hg' ]; then
-		echo -n "${YS_VCS_PROMPT_PREFIX1}hg${YS_VCS_PROMPT_PREFIX2}"
-		echo -n $(hg branch 2>/dev/null)
-		if [ -n "$(hg status 2>/dev/null)" ]; then
-			echo -n "$YS_VCS_PROMPT_DIRTY"
-		else
-			echo -n "$YS_VCS_PROMPT_CLEAN"
-		fi
-		echo -n "$YS_VCS_PROMPT_SUFFIX"
-	fi
+        # make sure this is a hg dir
+        if [ -d '.hg' ]; then
+                echo -n "${YS_VCS_PROMPT_PREFIX1}hg${YS_VCS_PROMPT_PREFIX2}"
+                echo -n $(hg branch 2>/dev/null)
+                if [ -n "$(hg status 2>/dev/null)" ]; then
+                        echo -n "$YS_VCS_PROMPT_DIRTY"
+                else
+                        echo -n "$YS_VCS_PROMPT_CLEAN"
+                fi
+                echo -n "$YS_VCS_PROMPT_SUFFIX"
+        fi
 }
 
-# Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
+# Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n \
@@ -56,6 +56,20 @@ ${hg_info}\
 ${git_info} \
 %{$fg[white]%}[%*]
 %{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
+
+PROMPT="
+%{$terminfo[bold]$fg[blue]%}%{$reset_color%}\
+%{$fg[cyan]%}%n\
+%{$fg[black]%}@\
+%{$fg[green]%}$(box_name)\
+%{$fg[black]%}:\
+%{$terminfo[bold]$fg[blue]%}${current_dir}%{$reset_color%}\
+${hg_info}\
+${git_info} \
+%{$fg[black]%}|
+%{$terminfo[bold]$fg[black]%}→ %{$reset_color%}"
+
+
 
 if [[ "$USER" == "root" ]]; then
 PROMPT="
@@ -70,5 +84,3 @@ ${git_info} \
 %{$fg[white]%}[%*]
 %{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 fi
-
-
