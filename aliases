@@ -42,9 +42,10 @@ alias 1n='cd /home/anand/projects/01/python; jupyter notebook python3.ipynb'
 
 alias dj="python manage.py"
 alias djc="python manage.py createsuperuser"
+alias djcd="python manage.py createsuperuser --username admin --email a@a.com"
 alias dm="python manage.py migrate"
 alias dmm="python manage.py makemigrations"
-alias dr="python manage.py runserver"
+alias dr="python manage.py runserver --no-color"
 alias drp="python manage.py runserver_plus"
 alias ds="python manage.py shell"
 alias dsp="python manage.py shell_plus"
@@ -83,7 +84,8 @@ alias lg2=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%
 alias lg="git lg1"
 alias gpom="git push origin master"
 alias gi="git init"
-alias go="git clone"
+alias gcl="git clone"
+alias gn="git clone"
 
 
 alias m=man
@@ -115,3 +117,13 @@ alias wi='whereis'
 alias wo='workon'
 alias wp='workon pearl'
 alias yd='youtube-dl '
+
+alias lh='http://127.0.0.1:8000'
+alias ak='appknox --username admin --password 123123 --host 127.0.0.1:8000 --no-secure'
+alias akh='appknox --help'
+
+alias bm="tmux new-session -d -s mycroft;
+tmux new-window -t mycroft:1 -n 'server' -c ~/sandbox/appknox/mycroft './scripts/start_server';
+tmux new-window -t mycroft:2 -n 'ls'  -c ~/sandbox/appknox/mycroft 'ls';
+
+tmux -2 attach-session -t mycroft;"

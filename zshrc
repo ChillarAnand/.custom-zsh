@@ -50,8 +50,8 @@ ZSH_CUSTOM=~/.custom-zsh/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git z extract dirpersist autoenv web-search)
-plugins=(git z extract dirpersist autoenv pip)
+# plugins=(git z extract dirpersist autoenv web-search pip)
+plugins=(git z extract dirpersist pip)
 
 # User configuration
 
@@ -123,6 +123,10 @@ export PATH="$HOME/.cask/bin:$PATH"
 # autoenv
 source /usr/local/bin/activate.sh
 
-workon 3
+workon mycroft
+
+# Load pyenv automatically
+# export PATH="/home/anand/.pyenv/bin:$PATH"
+
 
 echo "---------------------- sourced zsh ------------------------"
